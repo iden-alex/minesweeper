@@ -1,0 +1,68 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 2f5401a80abd3294cc0de1d8a1917816699cb838658dd9032a6338b6787955dc
+
+name:           project-template
+version:        0.0.0.0
+description:    Please see the README file.
+author:         John Doe
+maintainer:     John Doe
+copyright:      2020 John Doe
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      GameStruct
+      , GameInit
+      , GameAction
+      , GameRender
+      , Save
+      , GameResults
+  other-modules:
+      Paths_project_template
+  hs-source-dirs:
+      src
+  build-depends:
+      base
+      , containers
+      , random
+      , gloss
+      , random-shuffle
+      , directory
+  default-language: Haskell2010
+
+executable saper
+  main-is: Main.hs
+  other-modules:
+      Paths_project_template
+  hs-source-dirs:
+      app
+  ghc-options:
+  build-depends:
+      base
+    , project-template
+    , containers
+    , random
+    , gloss
+    , random-shuffle
+    , directory
+  default-language: Haskell2010
+
+test-suite project-template-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_project_template
+  hs-source-dirs:
+      test
+  ghc-options:
+  build-depends:
+      base >=4.7 && <5
+    , project-template
+  default-language: Haskell2010
