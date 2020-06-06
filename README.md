@@ -1,30 +1,17 @@
-# project-template
+# Classic computer game "Minesweeper"
 
-Шаблон проекта для выполнения практического задания.
+Project of course "Haskell programming"
 
-## Сборка и запуск
+## Build and Launch
 
-Соберите проект при помощи [утилиты Stack](https://www.haskellstack.org):
+Build project with [Stack](https://www.haskellstack.org):
 
 ```
 stack setup
 stack build
 ```
-
-Собрать и запустить проект можно при помощи команды:
-
-```
-stack build && stack exec my-project
-```
-
-Запустить тесты можно при помощи команды:
+Run project with command
 
 ```
-stack test
-```
-
-Чтобы запустить интепретатор GHCi и автоматически подгрузить все модули проекта, используйте команду:
-
-```
-stack ghci
+stack run
 ```
